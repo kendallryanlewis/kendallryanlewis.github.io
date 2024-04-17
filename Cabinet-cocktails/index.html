@@ -1,58 +1,271 @@
 <!DOCTYPE html>
 <html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Daily UI: Mobile app landing page</title>
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdn.rawgit.com/peachananr/onepage-scroll/252829a5/onepage-scroll.css'><link rel="stylesheet" href="./style.css">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cabinet Cocktails</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
-</head>
+		<link href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" href="./style.css">
+	</head>
 <body>
 <!-- partial:index.partial.html -->
-<main class="main">   
-   <!-- section 1 -->
-   <section class="layout--copy-right">
-      <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1438979315413-de5df30042a1?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375')"></div>
-      
-      <div class='iphone-6 iphone-6--on pca-hold shine-effect'> <div class='pca-main'> <div class='pca-inner'> </div> </div> <div class='pca-sub'> <div class='pca-top'></div> <div class='pca-mid'> <div class='pca-part'></div> </div> <div class='pca-bot'></div> </div> </div>
-      
-      <div class='iphone-6 pca-hold'> <div class='pca-main'> <div class='pca-inner'> </div> </div> <div class='pca-sub'> <div class='pca-top'></div> <div class='pca-mid'> <div class='pca-part'></div> </div> <div class='pca-bot'></div> </div> </div>
+<header>
+	<div class="row">
+		<!-- MAIN NAV -->
+		<nav class="clearfix">
+			<a href="#"><img class="logo" src="https://i.imgur.com/zk9ubpc.png" alt="White Logo"></a>
+			<ul class="main-nav">
+				<li><a href="#">About</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		
+		<!-- HERO TEXT -->
+		<div class="hero-content">
+			<h1>Cocktails for everyone</h1>
+			<p>Thouds of cocktails in your hands.</p>
+			<a class="btn btn-full" href="#">Get App</a>
+			<a class="btn btn-ghost" href="#">Learn More</a>
+		</div>
+	</div>
+</header>
 
-      <div class="copy">
-         <h1>This is a header</h1>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in nisi metus. Donec aliquet molestie ornare. Donec lacus lorem, fermentum in gravida quis, tempor non est. Nulla non feugiat ipsum. Nunc sed lacus vel velit convallis pellentesque. Vestibulum ac convallis libero.</p>
-      </div>
-      
-   </section>
-   
-   <!-- section 2 -->
-   <section class="layout--copy-left">
-      
-      <div class='pca-hold circle-animation'> <div class='pca-main'> <div class='pca-inner'> <div class="circle"></div> </div> </div> <div class='pca-sub'> <div class='pca-top'></div> <div class='pca-mid'> <div class='pca-part'></div> </div> <div class='pca-bot'></div> </div> </div>
-      
-      <div class="copy">
-         <h1>This is a header</h1>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in nisi metus. Donec aliquet molestie ornare. Donec lacus lorem, fermentum in gravida quis, tempor non est. Nulla non feugiat ipsum. Nunc sed lacus vel velit convallis pellentesque.
-            Vestibulum ac convallis libero.</p>
-      </div>
-      
-   </section>   
+<main>
+	<!-- FEATURE SECTION -->
+	<section class="section-feature clearfix">
+		<div class="row">
+			<h2>Lorem ipsum dolor</h2>
+			<p class="long-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit Necessitatibus quit exercitationem. culpa maxime corrupti odit facere reprehenderit dicta velit pariatur!</p>
+		</div>
+		<div class="row">
+			<div class="col-3 box">
+				<ion-icon name="phone-portrait-outline"></ion-icon>
+				<h3>Column</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem architecto explicabo aspernatur hic incidunt odit quisquam doloremque, autem aliquam excepturi.</p>
+			</div>
 
-   <!-- section 3 -->
-   <section class="layout--copy-top">
-      
-      <div class='iphone-6 pca-hold'> <div class='pca-main'> <div class='pca-inner'> </div> </div> <div class='pca-sub'> <div class='pca-top'></div> <div class='pca-mid'> <div class='pca-part'></div> </div> <div class='pca-bot'></div> </div> </div>
-      
-      <div class="copy">
-         <h1>This is a header</h1>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in nisi metus. Donec aliquet molestie ornare.</p>
-      </div>
-      
-   </section>
+			<div class="col-3 box">
+				<ion-icon name="play-circle-outline"></ion-icon>
+				<h3>Column</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem architecto explicabo aspernatur hic incidunt odit quisquam doloremque, autem aliquam excepturi.</p>
+			</div>
+
+			<div class="col-3 box">
+				<ion-icon name="cloud-download-outline"></ion-icon>
+				<h3>Column</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem architecto explicabo aspernatur hic incidunt odit quisquam doloremque, autem aliquam excepturi.</p>
+			</div>
+		</div>
+	</section>
+	
+	<!-- STEPS SECTION -->
+	<section class="steps-section">
+		<div class="row">
+			<h2>Lorem ipsum</h2>
+		</div>
+		
+		<div class="row clearfix">
+			<div class="col-2 steps-box">
+				<img src="https://i.imgur.com/x0QvrYJ.png" alt="Mockup" class="mockup-img">
+			</div>
+			
+			<div class="col-2 steps-box">
+				<ul class="works-steps">
+					<li class="clearfix">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, vero?</li>
+					<li class="clearfix">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ex.</li>
+					<li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, dolores?</li>
+					<li>
+						<a href="#" class="btn-app"><img src="https://i.imgur.com/J9zgUXj.png" alt="App Store"></a>
+						<a href="#" class="btn-app"><img src="https://i.imgur.com/7cAoFEy.png" alt="Google Play"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<!-- SERVICES SECTION -->
+    <section id="services">
+        <ul>
+            <li>
+                <div>
+                    <a href="">
+                        <i class="fas fa-laptop"></i><span>Stratagy and Consultant</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <i class="fas fa-users"></i><span>User Experience Design</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <i class="fas fa-mobile-alt"></i><span>Mobile App Development</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <i class="fab fa-chrome"></i><span>Web App Development</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <i class="fas fa-ribbon"></i><span>Quality Analysis and Testing</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <i class="fas fa-ticket-alt"></i><span>Application Management & Support</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        
+        <div id="service-footer">
+            <a href="" class="brand-btn">View All Service</a>
+        </div>
+    </section>
+
+	<!-- CONTACT SECTION -->
+	<section class="contact-section">
+		<div class="row">
+			<h2>WE'RE HERE &mdash; FOR YOU</h2>
+		</div>
+		<div class="row">
+			<form action="#" method="post" target="_blank">
+				<div class="row clearfix">
+					<div class="col-4">
+						<label for="name">Name</label>
+					</div>
+					<div class="col-75">
+						<input type="text" name="name" id="name" placeholder="Your Name" required>
+					</div>
+				</div>
+				
+				<div class="row clearfix">
+					<div class="col-4">
+						<label for="email">Email</label>
+					</div>
+					<div class="col-75">
+						<input type="email" name="email" id="email" placeholder="Your Email" required>
+					</div>
+				</div>
+				
+				<div class="row clearfix">
+					<div class="col-4">
+						<label for="subject">Subject</label>
+					</div>
+					<div class="col-75">
+						<select name="subject" id="subject">
+							<option value="sub">Subscription</option>
+							<option value="acc">Account</option>
+							<option value="log">Logging In</option>
+							<option value="tech">Technical Issues</option>
+							<option value="idea">Idea / Feedback</option>
+							<option value="broken">Report broken track / album</option>
+							<option value="report">Report content that violates AnySound's content policy</option>
+							<option>Personal data and privacy</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="row clearfix">
+					<div class="col-4">
+						<label for="news">News Letter</label>
+					</div>
+					<div class="col-75">
+						<input type="checkbox" name="news" value="on" id="news" checked> <span>*I would like to receive news letter</span>
+					</div>
+				</div>
+				
+				<div class="row clearfix">
+					<div class="col-4">
+						<label for="message">Message</label>
+					</div>
+					<div class="col-75">
+						<textarea name="message" id="message" placeholder="Your Message"></textarea>
+					</div>
+				</div>
+				<div>
+					<input type="submit" value="Send" class="btn btn-full">
+				</div>
+			</form>
+		</div>
+	</section>
+	
+	<!-- UPDATES SECTION -->
+	<section class="updates-section">
+		<div class="row updates-text">
+			<h2 class="updates-header">New on <span>AnySound</span></h2>
+			<p>Catch up the news, watch a quick video, and get music that matches the best of your run.</p>
+			<a href="#" class="btn btn-full">Finde Out More</a>
+		</div>
+	</section>
 </main>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src='https://cdn.rawgit.com/peachananr/onepage-scroll/252829a5/jquery.onepage-scroll.min.js'></script><script  src="./script.js"></script>
 
+<!-- FOOTER -->
+<footer>
+	<div class="row">
+		<figfure>
+			<img class="logo-footer" src="https://i.imgur.com/zk9ubpc.png" alt="White Logo">
+		</figfure>
+	</div>
+	
+	<div class="row clearfix">	
+		<div class="col-4">
+			<ul>
+				<li>Company</li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Jobs</a></li>
+				<li><a href="#">For the Record</a></li>
+			</ul>
+		</div>
+		
+		<div class="col-4">
+			<ul>
+				<li>Communities</li>
+				<li><a href="#">For Artists</a></li>
+				<li><a href="#">Developers</a></li>
+				<li><a href="#">Brands</a></li>
+				<li><a href="#">Investors</a></li>
+				<li><a href="#">Vendors</a></li>
+			</ul>
+		</div>
+		
+		<div class="col-4">
+			<ul>
+				<li>Useful Links</li>
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Web Player</a></li>
+				<li><a href="#">Free Mobile App</a></li>
+			</ul>
+		</div>
+		
+		<div class="col-4 social-nav">
+			<ul>
+				<li>Follow Us</li>
+				<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+				<li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+				<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+			</ul>
+		</div>
+	</div>
+	<p>Copyright © 2020 Itamar Rosenblum, All Right Reserved.</p>
+</footer>
+<!-- partial -->
+  <script src='https://unpkg.com/ionicons@5.2.3/dist/ionicons.js'></script>
 </body>
 </html>
