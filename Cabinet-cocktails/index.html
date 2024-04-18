@@ -3,15 +3,27 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Cabinet Cocktails</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap" rel="stylesheet">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<!-- Include AOS from CDN -->
+		<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	
+		<!-- Your stylesheet for AOS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+		
+		<!-- Link to Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	
 		<link rel="stylesheet" href="./style.css">
+		<script  src="./script.js"></script>
 	</head>
 <body>
-<!-- partial:index.partial.html -->
 <header>
 	<div class="row">
 		<!-- MAIN NAV -->
@@ -38,26 +50,26 @@
 	<!-- FEATURE SECTION -->
 	<section class="section-feature clearfix">
 		<div class="row">
-			<h2>Lorem ipsum dolor</h2>
-			<p class="long-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit Necessitatibus quit exercitationem. culpa maxime corrupti odit facere reprehenderit dicta velit pariatur!</p>
+			<h2>Cabinet Cocktails</h2>
+			<p class="long-copy">This application is designed to assist users in crafting a variety of cocktails using their available ingredients, while also providing an opportunity to discover new cocktail recipes. It offers a user-friendly interface that allows for the exploration and experimentation with different mixtures, enhancing both the novice and experienced mixologist's repertoire."</p>
 		</div>
 		<div class="row">
 			<div class="col-3 box">
 				<ion-icon name="phone-portrait-outline"></ion-icon>
-				<h3>Column</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem architecto explicabo aspernatur hic incidunt odit quisquam doloremque, autem aliquam excepturi.</p>
+				<h3>Create</h3>
+				<p>Harness the power of your pantry with our application, which allows you to utilize existing ingredients to create delicious, customized cocktails tailored to your tastes.</p>
 			</div>
 
 			<div class="col-3 box">
 				<ion-icon name="play-circle-outline"></ion-icon>
-				<h3>Column</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem architecto explicabo aspernatur hic incidunt odit quisquam doloremque, autem aliquam excepturi.</p>
+				<h3>Explore</h3>
+				<p>Dive into a world of mixology with our extensive database of cocktail recipes. Discover new favorites and experiment with unique combinations that inspire your inner bartender.</p>
 			</div>
 
 			<div class="col-3 box">
 				<ion-icon name="cloud-download-outline"></ion-icon>
-				<h3>Column</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem architecto explicabo aspernatur hic incidunt odit quisquam doloremque, autem aliquam excepturi.</p>
+				<h3>Save</h3>
+				<p>Keep track of your cocktail creations and favorites easily with our app’s personalized saving feature, ensuring your best recipes are always at your fingertips for your next gathering or quiet evening at home.</p>
 			</div>
 		</div>
 	</section>
@@ -65,19 +77,19 @@
 	<!-- STEPS SECTION -->
 	<section class="steps-section">
 		<div class="row">
-			<h2>Lorem ipsum</h2>
+			<h2>Quick Access</h2>
 		</div>
 		
 		<div class="row clearfix">
 			<div class="col-2 steps-box">
-				<img src="https://i.imgur.com/x0QvrYJ.png" alt="Mockup" class="mockup-img">
+				<img src="image/homeScreen.png" alt="Mockup" class="mockup-img">
 			</div>
 			
 			<div class="col-2 steps-box">
 				<ul class="works-steps">
-					<li class="clearfix">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, vero?</li>
-					<li class="clearfix">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ex.</li>
-					<li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, dolores?</li>
+					<li class="clearfix">Experience seamless navigation through our app with quick access to all features, enabling you to switch effortlessly between features.</li>
+					<li class="clearfix">Designed for efficiency, our app minimizes the time from inspiration to sip, providing fast and responsive tools that streamline your cocktail crafting process.</li>
+					<li>Our application adapts to your preferences and tastes, offering personalized recommendations and modifications to recipes.</li>
 					<li>
 						<a href="#" class="btn-app"><img src="https://i.imgur.com/J9zgUXj.png" alt="App Store"></a>
 						<a href="#" class="btn-app"><img src="https://i.imgur.com/7cAoFEy.png" alt="Google Play"></a>
@@ -87,125 +99,47 @@
 		</div>
 	</section>
 
-	<!-- SERVICES SECTION -->
-    <section id="services">
-        <ul>
-            <li>
-                <div>
-                    <a href="">
-                        <i class="fas fa-laptop"></i><span>Stratagy and Consultant</span>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="">
-                        <i class="fas fa-users"></i><span>User Experience Design</span>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="">
-                        <i class="fas fa-mobile-alt"></i><span>Mobile App Development</span>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="">
-                        <i class="fab fa-chrome"></i><span>Web App Development</span>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="">
-                        <i class="fas fa-ribbon"></i><span>Quality Analysis and Testing</span>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <a href="">
-                        <i class="fas fa-ticket-alt"></i><span>Application Management & Support</span>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        
-        <div id="service-footer">
-            <a href="" class="brand-btn">View All Service</a>
-        </div>
-    </section>
 
-	<!-- CONTACT SECTION -->
-	<section class="contact-section">
-		<div class="row">
-			<h2>WE'RE HERE &mdash; FOR YOU</h2>
+
+
+
+
+<div class="m-5 p-5">
+	<div class="outer">
+		<div class="device">
+			<div class="phone"></div>
 		</div>
-		<div class="row">
-			<form action="#" method="post" target="_blank">
-				<div class="row clearfix">
-					<div class="col-4">
-						<label for="name">Name</label>
-					</div>
-					<div class="col-75">
-						<input type="text" name="name" id="name" placeholder="Your Name" required>
-					</div>
-				</div>
-				
-				<div class="row clearfix">
-					<div class="col-4">
-						<label for="email">Email</label>
-					</div>
-					<div class="col-75">
-						<input type="email" name="email" id="email" placeholder="Your Email" required>
-					</div>
-				</div>
-				
-				<div class="row clearfix">
-					<div class="col-4">
-						<label for="subject">Subject</label>
-					</div>
-					<div class="col-75">
-						<select name="subject" id="subject">
-							<option value="sub">Subscription</option>
-							<option value="acc">Account</option>
-							<option value="log">Logging In</option>
-							<option value="tech">Technical Issues</option>
-							<option value="idea">Idea / Feedback</option>
-							<option value="broken">Report broken track / album</option>
-							<option value="report">Report content that violates AnySound's content policy</option>
-							<option>Personal data and privacy</option>
-						</select>
-					</div>
-				</div>
-				
-				<div class="row clearfix">
-					<div class="col-4">
-						<label for="news">News Letter</label>
-					</div>
-					<div class="col-75">
-						<input type="checkbox" name="news" value="on" id="news" checked> <span>*I would like to receive news letter</span>
-					</div>
-				</div>
-				
-				<div class="row clearfix">
-					<div class="col-4">
-						<label for="message">Message</label>
-					</div>
-					<div class="col-75">
-						<textarea name="message" id="message" placeholder="Your Message"></textarea>
-					</div>
-				</div>
-				<div>
-					<input type="submit" value="Send" class="btn btn-full">
-				</div>
-			</form>
+		<div class="text">
+			<div class="fade-item">
+				<h1>Quick Mix</h1>
+				<p>Quick Mix, the dedicated section of our app where you have the freedom to create and customize your own cocktails. Explore a variety of ingredients and mixology techniques to concoct beverages that perfectly suit your taste and style.</p>
+			</div>
+			<div class="fade-item">
+				<h1>Top Shelf</h1>
+				<p>Top Shelf, here you can catalog all the ingredients and items available in your possession. Once you've provided this information, we'll assist you in exploring creative cocktail options tailored specifically to your inventory.</p>
+			</div>
+			<div class="fade-item">
+				<h1>Mixology</h1>
+				<p>In our Mixology section, we'll carefully create a cocktail specifically designed according to your selected preferences. Additionally, we'll present a range of further possibilities, expanding your horizons with exciting new mix options and variations.</p>
+			</div>
+			<div class="fade-item">
+				<h1>Custom Options</h1>
+				<p>Explore the personalized options we have curated specifically for you by visiting our custom selections page here.</p>
+			</div>
+			<div class="fade-item  text__last">
+				<h1>Drink Details</h1>
+				<p>View your drink, complete with a detailed list of all the ingredients and step-by-step instructions, by clicking here.</p>
+			</div>
 		</div>
-	</section>
+	</div>
+</div>
 	
+	<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
+	<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js'></script>
+
+
+
 	<!-- UPDATES SECTION -->
 	<section class="updates-section">
 		<div class="row updates-text">
@@ -217,54 +151,119 @@
 </main>
 
 <!-- FOOTER -->
-<footer>
-	<div class="row">
-		<figfure>
-			<img class="logo-footer" src="https://i.imgur.com/zk9ubpc.png" alt="White Logo">
-		</figfure>
-	</div>
-	
-	<div class="row clearfix">	
-		<div class="col-4">
-			<ul>
-				<li>Company</li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Jobs</a></li>
-				<li><a href="#">For the Record</a></li>
-			</ul>
-		</div>
-		
-		<div class="col-4">
-			<ul>
-				<li>Communities</li>
-				<li><a href="#">For Artists</a></li>
-				<li><a href="#">Developers</a></li>
-				<li><a href="#">Brands</a></li>
-				<li><a href="#">Investors</a></li>
-				<li><a href="#">Vendors</a></li>
-			</ul>
-		</div>
-		
-		<div class="col-4">
-			<ul>
-				<li>Useful Links</li>
-				<li><a href="#">Help</a></li>
-				<li><a href="#">Web Player</a></li>
-				<li><a href="#">Free Mobile App</a></li>
-			</ul>
-		</div>
-		
-		<div class="col-4 social-nav">
-			<ul>
-				<li>Follow Us</li>
-				<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-				<li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-				<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-			</ul>
-		</div>
-	</div>
-	<p>Copyright © 2020 Itamar Rosenblum, All Right Reserved.</p>
-</footer>
+<footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 <!-- partial -->
   <script src='https://unpkg.com/ionicons@5.2.3/dist/ionicons.js'></script>
 </body>
