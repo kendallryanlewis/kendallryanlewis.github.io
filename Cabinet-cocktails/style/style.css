@@ -31,7 +31,6 @@ html{
 
 body {
 	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
 	font-weight: 300;
 	color: #555;
 	background-color: #f9f9f9;
@@ -318,7 +317,7 @@ ion-icon[name="cloud-download-outline"] {
     border: 2px solid var(--wheat);
     border-radius: 50%;
     text-align: center;
-    font-size: 120%;
+    font-size: 150%;
     color: var(--wheat);
 }
 
@@ -381,7 +380,7 @@ textarea {
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 60vh;
+	height: 30vh;
 }
 
 .updates-text {
@@ -405,8 +404,72 @@ textarea {
 	color: var(--wheat);
 }
 
+/* --------------------------------- */
+/* LAYOUT */
+/* --------------------------------- */
 
+.outer {
+    width: 100%; /* Full width */
+    min-height: 100vh; /* Minimum height is full viewport height, or any specific value you want */
+    display: flex; /* Using flexbox */
+    justify-content: center; /* Centering content horizontally */
+    align-items: stretch; /* Stretching children to fit vertically */
+}
 
+.device {
+    width: 100%; /* Full width of its parent */
+    height: 100%; /* Full height of its parent */
+    display: flex; /* You can use flexbox here too if needed for inner elements */
+    align-items: center; /* Centering inner content vertically */
+    justify-content: center; /* Centering inner content horizontally */
+}
+
+.phone {
+	background: url(../image/QuickMix.png) no-repeat;
+	margin-left: auto;
+	height: 60vh;
+	width: 20vw;
+	background-size: cover;
+  }
+  
+  .phone2 {
+	background: url(../image/TopShelf.png) no-repeat;
+	background-size: cover;
+  }
+  
+  .phone3 {
+	background: url(../image/Mixology.png) no-repeat;
+	background-size: cover;
+  }
+  
+  .phone4 {
+	background: url(../image/Mixology-option.png) no-repeat;
+	background-size: cover;
+  }
+  .phone5 {
+	background: url(../image/Drink-option.png) no-repeat;
+	background-size: cover;
+  }
+  
+.text {
+    margin: 10% 0 10% 0;
+    width: 100%;
+    height: auto;
+}
+.text h1 {
+    color: wheat;
+}
+.text p {
+    color: white;
+}
+.text .fade-item {
+    opacity: 0;
+    width: 445px;
+    padding-bottom: 150px;
+}
+.text .fade-item:last-child {
+    
+}
 
 /* --------------------------------- */
 /* FOOTER */
@@ -580,69 +643,6 @@ ul {
 
 
 
-
-.outer {
-    width: 100%; /* Full width */
-    min-height: 100vh; /* Minimum height is full viewport height, or any specific value you want */
-    display: flex; /* Using flexbox */
-    justify-content: center; /* Centering content horizontally */
-    align-items: stretch; /* Stretching children to fit vertically */
-}
-
-.device {
-    width: 100%; /* Full width of its parent */
-    height: 100%; /* Full height of its parent */
-    display: flex; /* You can use flexbox here too if needed for inner elements */
-    align-items: center; /* Centering inner content vertically */
-    justify-content: center; /* Centering inner content horizontally */
-}
-
-.phone {
-	background: url(../image/QuickMix.png) no-repeat;
-	margin-left: auto;
-	height: 60vh;
-	width: 20vw;
-	background-size: cover;
-  }
-  
-  .phone2 {
-	background: url(../image/TopShelf.png) no-repeat;
-	background-size: cover;
-  }
-  
-  .phone3 {
-	background: url(../image/Mixology.png) no-repeat;
-	background-size: cover;
-  }
-  
-  .phone4 {
-	background: url(../image/Mixology-option.png) no-repeat;
-	background-size: cover;
-  }
-  .phone5 {
-	background: url(../image/Drink-option.png) no-repeat;
-	background-size: cover;
-  }
-  
-.text {
-    margin: 10% 0 10% 0;
-    width: 100%;
-    height: auto;
-}
-.text h1 {
-    color: wheat;
-}
-.text p {
-    color: white;
-}
-.text .fade-item {
-    opacity: 0;
-    width: 445px;
-    padding-bottom: 150px;
-}
-.text .fade-item:last-child {
-    
-}
 
 
 

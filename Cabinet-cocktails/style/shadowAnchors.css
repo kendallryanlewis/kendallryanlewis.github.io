@@ -1656,7 +1656,8 @@ body:not(.body--mobile) .state-at-top-position .paragraphs_box--top {
 .paragraphs__item__number {
 	position: absolute;
 	color: #f9e1d5;
-	font-size: 15vw;
+	font-size: 13vw;
+	opacity: 0.3;
 	font-family: Playfair Display, Helvetica, Arial, sans-serif
 }
 @media (max-width: 1023px) {
