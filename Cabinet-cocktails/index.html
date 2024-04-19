@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Cabinet Cocktails</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -11,6 +11,8 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
 
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
 		<!-- Include AOS from CDN -->
 		<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 	
@@ -20,251 +22,284 @@
 		<!-- Link to Bootstrap CSS -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 	
-		<link rel="stylesheet" href="./style.css">
-		<script  src="./script.js"></script>
+		<link rel="stylesheet" href="./style/shadowAnchors.css">
+		<link rel="stylesheet" href="./style/style.css">
+		<script  src="./style/shadowAnchors.css"></script>
+		<script  src="./style/style.css"></script>
+
+		<script  src="./js/shadowAnchors.js"></script>
+		<script  src="./js/script.js"></script>
 	</head>
-<body>
-<header>
-	<div class="row">
-		<!-- MAIN NAV -->
-		<nav class="clearfix">
-			<a href="#"><img class="logo" src="https://i.imgur.com/zk9ubpc.png" alt="White Logo"></a>
-			<ul class="main-nav">
-				<li><a href="#">About</a></li>
-				<li><a href="#">Terms</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-		
-		<!-- HERO TEXT -->
-		<div class="hero-content">
-			<h1>Cocktails for everyone</h1>
-			<p>Thouds of cocktails in your hands.</p>
-			<a class="btn btn-full" href="#">Get App</a>
-			<a class="btn btn-ghost" href="#">Learn More</a>
-		</div>
-	</div>
-</header>
-
-<main>
-	<!-- FEATURE SECTION -->
-	<section class="section-feature clearfix">
-		<div class="row">
-			<h2>Cabinet Cocktails</h2>
-			<p class="long-copy">This application is designed to assist users in crafting a variety of cocktails using their available ingredients, while also providing an opportunity to discover new cocktail recipes. It offers a user-friendly interface that allows for the exploration and experimentation with different mixtures, enhancing both the novice and experienced mixologist's repertoire."</p>
-		</div>
-		<div class="row">
-			<div class="col-3 box">
-				<ion-icon name="phone-portrait-outline"></ion-icon>
-				<h3>Create</h3>
-				<p>Harness the power of your pantry with our application, which allows you to utilize existing ingredients to create delicious, customized cocktails tailored to your tastes.</p>
+	<body>
+		<header id="home">
+			<div class="row">
+				<!-- MAIN NAV -->
+				<nav class="d-flex justify-content-between">
+					<h1 class="fw-bold">CC</h1>
+					<ul class="main-nav">
+						<li class="pe-2"><a href="#">About</a></li>
+						<li class="pe-2"><a href="#">Terms</a></li>
+						<li class="pe-2"></li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+				
+				<!-- HERO TEXT -->
+				<div class="hero-content">
+					<h1>Cocktails for everyone</h1>
+					<p>Thousands of cocktails in your hands.</p>
+					<a class="btn btn-full" href="#">Get App</a>
+					<a class="btn btn-ghost" href="#Feature">Learn More</a>
+				</div>
 			</div>
+		</header>
 
-			<div class="col-3 box">
-				<ion-icon name="play-circle-outline"></ion-icon>
-				<h3>Explore</h3>
-				<p>Dive into a world of mixology with our extensive database of cocktail recipes. Discover new favorites and experiment with unique combinations that inspire your inner bartender.</p>
+		<main>
+			<!-- FEATURE SECTION -->
+			<section id="Feature" class="section-feature">
+				<div class="row">
+					<h2>Cabinet Cocktails</h2>
+					<p class="long-copy">This application is designed to assist users in crafting a variety of cocktails using their available ingredients, while also providing an opportunity to discover new cocktail recipes. It offers a user-friendly interface that allows for the exploration and experimentation with different mixtures, enhancing both the novice and experienced mixologist's repertoire."</p>
+				</div>
+				<div class="row">
+					<div class="col-md-4 box text-center">
+						<ion-icon name="phone-portrait-outline"></ion-icon>
+						<h3>Create</h3>
+						<p>Harness the power of your pantry with our application, which allows you to utilize existing ingredients to create delicious, customized cocktails tailored to your tastes.</p>
+					</div>
+
+					<div class="col-md-4 box text-center">
+						<ion-icon name="play-circle-outline"></ion-icon>
+						<h3>Explore</h3>
+						<p>Dive into a world of mixology with our extensive database of cocktail recipes. Discover new favorites and experiment with unique combinations that inspire your inner bartender.</p>
+					</div>
+
+					<div class="col-md-4 box text-center">
+						<ion-icon name="cloud-download-outline"></ion-icon>
+						<h3>Save</h3>
+						<p>Keep track of your cocktail creations and favorites easily with our app’s personalized saving feature, ensuring your best recipes are always at your fingertips for your next gathering or quiet evening at home.</p>
+					</div>
+				</div>
+			</section>
+			<!-- QUICK ACTIONS SECTION -->
+			<section id="Quick" class="steps-section">
+				<div class="row">
+					<h2>Quick Access</h2>
+				</div>
+				<div class="row clearfix">
+					<div class="col-md-4 steps-box">
+						<img src="image/homeScreen.png" alt="Mockup" class="mockup-img">
+					</div>
+					<div class="col-md-8 steps-box m-auto">
+						<ul class="works-steps">
+							<li class="clearfix">Experience seamless navigation through our app with quick access to all features, enabling you to switch effortlessly between features.</li>
+							<li class="clearfix">Designed for efficiency, our app minimizes the time from inspiration to sip, providing fast and responsive tools that streamline your cocktail crafting process.</li>
+							<li>Our application adapts to your preferences and tastes, offering personalized recommendations and modifications to recipes.</li>
+							<li>
+								<a href="#" class="btn-app"><img src="https://i.imgur.com/J9zgUXj.png" alt="App Store"></a>
+								<a href="#" class="btn-app"><img src="https://i.imgur.com/7cAoFEy.png" alt="Google Play"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- LAYOUT SECTION -->
+			<section id="Layout" class="paragraphs">
+				<!--Quick Mix-->
+				<div class="row">
+					<div class="col-md-8 m-auto">
+						<div data-bottom-top="transform: translateZ(0) translateY(20%); opacity: 0;" 
+							data-top-bottom="transform: translateZ(0) translateY(-20%);" 
+							data--100-bottom="opacity:1;" 
+							class="d-grid js-appearing-content skrollable skrollable-between" 
+							data-appear-top-offset="-137.2" style="transform: translateZ(0px) translateY(3.83124%); opacity: 1;">
+						<h2 class="text-wheat">Quick Mix</h2>
+						<p class="text-white">Quick Mix, the dedicated section of our app where you have the freedom to create and customize your own cocktails. Explore a variety of ingredients and mixology techniques to concoct beverages that perfectly suit your taste and style.</p>	
+						<span data-bottom-top="transform: translateZ(0) translateY(5%); opacity: 0;" 
+							data-top-bottom="transform: translateZ(0) translateY(-20%);" 
+							data--200-bottom="opacity:0.1;" 
+							class="paragraphs__item__number skrollable skrollable-between" 
+							style="transform: translateZ(0px) translateY(3.46827%); opacity: 1;">Cocktail</span>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="decor__flying_word_img_box"><img src="image/QuickMix.png" class="basic_phone"></div>
+					</div>
+				</div>
+				<!--Top Shelf-->
+				<div class="bg-faint-white top-n5 p-5">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="decor__flying_word_img_box"><img src="image/TopShelf.png" class="basic_phone"></div>
+						</div>
+						<div class="col-md-8 m-auto">
+							<div data-bottom-top="transform: translateZ(0) translateY(20%); opacity: 0;" 
+								data-top-bottom="transform: translateZ(0) translateY(-20%);" 
+								data--100-bottom="opacity:1;" 
+								class="d-grid js-appearing-content skrollable skrollable-between" 
+								data-appear-top-offset="-137.2" style="transform: translateZ(0px) translateY(3.83124%); opacity: 1;">
+							<h2 class="text-wheat">Cabinet</h2>
+							<p class="text-white">Top Shelf, here you can catalog all the ingredients and items available in your possession. Once you've provided this information, we'll assist you in exploring creative cocktail options tailored specifically to your inventory.</p>
+							<span data-bottom-top="transform: translateZ(0) translateY(5%); opacity: 0;" 
+								data-top-bottom="transform: translateZ(0) translateY(-20%);" 
+								data--200-bottom="opacity:0.1;" 
+								class="paragraphs__item__number skrollable skrollable-between" 
+								style="transform: translateZ(0px) translateY(3.46827%); opacity: 1;">Bartop</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Mixology-->
+				<div class="top-n5">
+					<div class="row">
+						<div class="col-md-8 m-auto">
+							<div data-bottom-top="transform: translateZ(0) translateY(20%); opacity: 0;" 
+								data-top-bottom="transform: translateZ(0) translateY(-20%);" 
+								data--100-bottom="opacity:1;" 
+								class="d-grid js-appearing-content skrollable skrollable-between" 
+								data-appear-top-offset="-137.2" style="transform: translateZ(0px) translateY(3.83124%); opacity: 1;">
+							<h2 class="text-wheat">Mixology</h2>
+							<p class="text-white">In our Mixology section, we'll carefully create a cocktail specifically designed according to your selected preferences. Additionally, we'll present a range of further possibilities, expanding your horizons with exciting new mix options and variations.</p>
+							<span data-bottom-top="transform: translateZ(0) translateY(5%); opacity: 0;" 
+								data-top-bottom="transform: translateZ(0) translateY(-20%);" 
+								data--200-bottom="opacity:0.1;" 
+								class="paragraphs__item__number skrollable skrollable-between" 
+								style="transform: translateZ(0px) translateY(3.46827%); opacity: 1;">Mixology</span>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="decor__flying_word_img_box"><img src="image/Mixology.png" class="basic_phone"></div>
+						</div>
+					</div>
+				</div>
+				<!--Custom options-->
+				<div class="bg-faint-white top-n5 p-5">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="decor__flying_word_img_box"><img src="image/Mixology-option.png" class="basic_phone"></div>
+						</div>
+						<div class="col-md-8 m-auto">
+							<div data-bottom-top="transform: translateZ(0) translateY(20%); opacity: 0;" 
+								data-top-bottom="transform: translateZ(0) translateY(-20%);" 
+								data--100-bottom="opacity:1;" 
+								class="d-grid js-appearing-content skrollable skrollable-between" 
+								data-appear-top-offset="-137.2" style="transform: translateZ(0px) translateY(3.83124%); opacity: 1;">
+							<h2 class="text-wheat">Options</h2>
+							<p class="text-white">Explore the personalized options we have curated specifically for you by visiting our custom selections page here.</p><span data-bottom-top="transform: translateZ(0) translateY(5%); opacity: 0;" 
+								data-top-bottom="transform: translateZ(0) translateY(-20%);" 
+								data--200-bottom="opacity:0.1;" 
+								class="paragraphs__item__number skrollable skrollable-between" 
+								style="transform: translateZ(0px) translateY(3.46827%); opacity: 1;">Custom</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Drink Options-->
+				<div class="top-n5">
+					<div class="row">
+						<div class="col-md-8 m-auto">
+							<div data-bottom-top="transform: translateZ(0) translateY(20%); opacity: 0;" 
+								data-top-bottom="transform: translateZ(0) translateY(-20%);" 
+								data--100-bottom="opacity:1;" 
+								class="d-grid js-appearing-content skrollable skrollable-between" 
+								data-appear-top-offset="-137.2" style="transform: translateZ(0px) translateY(3.83124%); opacity: 1;">
+							<h2 class="text-wheat">Drinks</h2>
+							<p class="text-white">View your drink, complete with a detailed list of all the ingredients and step-by-step instructions, by clicking here.</p>
+							<span data-bottom-top="transform: translateZ(0) translateY(5%); opacity: 0;" 
+								data-top-bottom="transform: translateZ(0) translateY(-20%);" 
+								data--200-bottom="opacity:0.1;" 
+								class="paragraphs__item__number skrollable skrollable-between" 
+								style="transform: translateZ(0px) translateY(3.46827%); opacity: 1;">Details</span>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="decor__flying_word_img_box"><img src="image/Drink-option.png" class="basic_phone"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- UPDATES SECTION -->
+			<section class="updates-section">
+				<div class="row updates-text">
+					<h2 class="updates-header">Get<span class="ms-3">Cabinet Cocktails</span></h2>
+					<p>Be sure to download the latest version of Cabinet Cocktails. </p>
+					<a href="#" class="btn btn-full">Download</a>
+				</div>
+			</section>
+		</main>
+		<!-- FOOTER -->
+		<footer class="footer-section">
+			<div class="container">
+				<div class="footer-content pt-5 pb-5">
+					<div class="row">
+						<div class="col-xl-4 col-lg-4 mb-50">
+							<div class="footer-widget">
+								<div class="text-white fw-bold fs-1">
+									KNDL
+								</div>
+								<div class="footer-text">
+									<p>This application is designed to assist users in crafting a variety of cocktails using their available ingredients, while also providing an opportunity to discover new cocktail recipes.</p>
+								</div>
+								<!--<div class="footer-social-icon">
+									<span>Follow us</span>
+									<a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+									<a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+									<a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+								</div>-->
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+							<div class="footer-widget">
+								<div class="footer-widget-heading">
+									<h3>Useful Links</h3>
+								</div>
+								<ul>
+									<li><a href="#Feature">Feature</a></li>
+									<li><a href="#Quick">Quick</a></li>
+									<li><a href="#Layout">Layout</a></li>
+									<li><a href="#Build">Create</a></li>
+									<li><a href="#Mixology">Mixology</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+							<div class="footer-widget">
+								<div class="footer-widget-heading">
+									<h3>Contact</h3>
+								</div>
+								<div class="single-cta d-flex mb-4">
+									<i class="far fa-envelope-open my-auto"></i>
+									<p class="my-auto text-left ms-2">kndl.inc@gamil.com</p>
+								</div>
+								<div class="single-cta d-flex">
+									<i class="fas fa-map my-auto"></i>
+									<p class="mx-auto text-left ms-2">USA</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-
-			<div class="col-3 box">
-				<ion-icon name="cloud-download-outline"></ion-icon>
-				<h3>Save</h3>
-				<p>Keep track of your cocktail creations and favorites easily with our app’s personalized saving feature, ensuring your best recipes are always at your fingertips for your next gathering or quiet evening at home.</p>
+			<div class="copyright-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-6 col-lg-6 text-center text-lg-left">
+							<div class="copyright-text">
+								<p>Copyright &copy; 2024, All Right Reserved <a href="https://kendallryanlewis.com">KNDL</a></p>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+							<div class="footer-menu">
+								<ul>
+									<li><a href="#home">Home</a></li>
+									<li><a href="#">Terms</a></li>
+									<li><a href="#">Privacy</a></li>
+									<li><a href="#">Policy</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-	</section>
-	
-	<!-- STEPS SECTION -->
-	<section class="steps-section">
-		<div class="row">
-			<h2>Quick Access</h2>
-		</div>
-		
-		<div class="row clearfix">
-			<div class="col-2 steps-box">
-				<img src="image/homeScreen.png" alt="Mockup" class="mockup-img">
-			</div>
-			
-			<div class="col-2 steps-box">
-				<ul class="works-steps">
-					<li class="clearfix">Experience seamless navigation through our app with quick access to all features, enabling you to switch effortlessly between features.</li>
-					<li class="clearfix">Designed for efficiency, our app minimizes the time from inspiration to sip, providing fast and responsive tools that streamline your cocktail crafting process.</li>
-					<li>Our application adapts to your preferences and tastes, offering personalized recommendations and modifications to recipes.</li>
-					<li>
-						<a href="#" class="btn-app"><img src="https://i.imgur.com/J9zgUXj.png" alt="App Store"></a>
-						<a href="#" class="btn-app"><img src="https://i.imgur.com/7cAoFEy.png" alt="Google Play"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-
-
-
-
-
-
-<div class="m-5 p-5">
-	<div class="outer">
-		<div class="device">
-			<div class="phone"></div>
-		</div>
-		<div class="text">
-			<div class="fade-item">
-				<h1>Quick Mix</h1>
-				<p>Quick Mix, the dedicated section of our app where you have the freedom to create and customize your own cocktails. Explore a variety of ingredients and mixology techniques to concoct beverages that perfectly suit your taste and style.</p>
-			</div>
-			<div class="fade-item">
-				<h1>Top Shelf</h1>
-				<p>Top Shelf, here you can catalog all the ingredients and items available in your possession. Once you've provided this information, we'll assist you in exploring creative cocktail options tailored specifically to your inventory.</p>
-			</div>
-			<div class="fade-item">
-				<h1>Mixology</h1>
-				<p>In our Mixology section, we'll carefully create a cocktail specifically designed according to your selected preferences. Additionally, we'll present a range of further possibilities, expanding your horizons with exciting new mix options and variations.</p>
-			</div>
-			<div class="fade-item">
-				<h1>Custom Options</h1>
-				<p>Explore the personalized options we have curated specifically for you by visiting our custom selections page here.</p>
-			</div>
-			<div class="fade-item  text__last">
-				<h1>Drink Details</h1>
-				<p>View your drink, complete with a detailed list of all the ingredients and step-by-step instructions, by clicking here.</p>
-			</div>
-		</div>
-	</div>
-</div>
-	
-	<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
-	<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js'></script>
-
-
-
-	<!-- UPDATES SECTION -->
-	<section class="updates-section">
-		<div class="row updates-text">
-			<h2 class="updates-header">New on <span>AnySound</span></h2>
-			<p>Catch up the news, watch a quick video, and get music that matches the best of your run.</p>
-			<a href="#" class="btn btn-full">Finde Out More</a>
-		</div>
-	</section>
-</main>
-
-<!-- FOOTER -->
-<footer class="footer-section">
-        <div class="container">
-            <div class="footer-cta pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="cta-text">
-                                <h4>Find us</h4>
-                                <span>1010 Avenue, sw 54321, chandigarh</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-phone"></i>
-                            <div class="cta-text">
-                                <h4>Call us</h4>
-                                <span>9876543210 0</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="far fa-envelope-open"></i>
-                            <div class="cta-text">
-                                <h4>Mail us</h4>
-                                <span>mail@info.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-content pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-logo">
-                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
-                            </div>
-                            <div class="footer-text">
-                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                elit,Lorem ipsum dolor sit amet.</p>
-                            </div>
-                            <div class="footer-social-icon">
-                                <span>Follow us</span>
-                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Useful Links</h3>
-                            </div>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
-                                <li><a href="#">portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Expert Team</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Latest News</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Subscribe</h3>
-                            </div>
-                            <div class="footer-text mb-25">
-                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                            </div>
-                            <div class="subscribe-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Email Address">
-                                    <button><i class="fab fa-telegram-plane"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text">
-                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Policy</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-<!-- partial -->
-  <script src='https://unpkg.com/ionicons@5.2.3/dist/ionicons.js'></script>
-</body>
+		</footer>
+	</body>
 </html>
