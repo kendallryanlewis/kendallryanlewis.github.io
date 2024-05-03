@@ -3,22 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <title>KNDL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--<link rel="icon" type="image/png" sizes="32x32" href="image/Cabinet Cocktails logo.png">-->
+
     <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css'>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-		<!-- Link to Bootstrap CSS -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-		<link rel="stylesheet" href="./style.css">
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-  <section class="et-hero-tabs">
-    <header class="justify-content-between d-flex px-5">
+  <section class="et-hero-tabs p-0">
+    <header class="justify-content-between d-flex px-5 d-none d-lg-flex">
       <div class="logo">
         <h3>KNDL</h3>
         <p>-INC-</p>
@@ -30,20 +33,70 @@
         <li class="pe-4"><button class="">Contact</button></li>
       </ul>
     </header>
-    <div class="main-content">
-      <div class="row vh-100">
-        <div class="col-6 headliner m-auto">
-          <h1>KNDL INC</h1>
-          <h3>Where Ideas Meet Implementation.</h3>
+    <div class="main-content" id="tab-home">
+      <div class="row mx-0 vh-100">
+        <div class="col-md-6 headliner d-flex h-lg-100">
+          <div class="m-auto">
+            <h1>KNDL INC</h1>
+           <h3>Where Ideas Meet Implementation.</h3>
+           <div class="d-flex d-lg-none mt-3 justify-content-center">
+            <div class="p-3">
+              <div class="inner-box-small p-3">
+                <a href="Cabinet-cocktails/index.html" class="h-100 w-100">
+                  <img src="./Cabinet-cocktails/image/Cabinet Cocktails logo.png" alt="Cabinet Cocktails Logo" class="h-100 w-100">
+                </a>
+              </div>
+            </div>
+            <div class="p-3">
+              <div class="inner-box-small p-3" >
+                <a href="DripDrops/index.html" class="h-100 w-100">
+                  <img src="./DripDrops/image/DripDrops.png" alt="Drip Drops Logo" class="h-100 w-100">
+                </a>
+              </div>
+            </div>
+           </div>
+          </div>
         </div>
-        <div class="col-6 m-auto h-100 row">
-          <section class="section d-flex slider-section">
+        <div class="col-md-6 m-auto h-lg-100 row d-none d-lg-flex">
+          <section class="section d-flex slider-section p-5">
             <div class="container m-auto slider-column ">
               <div class="slider-inner" id="slider">
-                <div class="p-3"><div class="inner-box"></div></div>
-                <div class="p-3"><div class="inner-box"></div></div>
-                <div class="p-3"><div class="inner-box"></div></div>
-                <div class="p-3"><div class="inner-box"></div></div>
+                <div class="p-3">
+                  <div class="inner-box p-3 cc-background">
+                    <a href="Cabinet-cocktails/index.html">
+                      <img src="./Cabinet-cocktails/image/Cabinet Cocktails logo.png" alt="Cabinet Cocktails Logo">
+                    </a>
+                    <div>
+                      <a class="p-2 showcase-download w-100" href="https://apps.apple.com/us/app/cabinet-cocktails/id6496685480">
+                        Download
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div class="inner-box p-3">
+                    <a href="DripDrops/index.html">
+                      <img src="./DripDrops/image/DripDrops.png" alt="Drip Drops Logo">
+                    </a>
+                    <div>
+                      <a class="p-2 showcase-download w-100">
+                        Coming Soon
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--
+                <a class="p-3">
+                  <div class="inner-box" >
+
+                  </div>
+                </a>
+                <a class="p-3">
+                  <div class="inner-box" >
+
+                  </div>
+                </a>-->
               </div>
               <!--<span role="tablist" class="pagination"></span>-->
               <div class="justify-content-start d-flex p-3">
@@ -55,7 +108,7 @@
         </div>
       </div>
     </div>
-    <div class="et-hero-tabs-container">
+    <div class="et-hero-tabs-container d-none d-lg-flex">
       <a class="et-hero-tab" href="#tab-who">Who</a>
       <a class="et-hero-tab" href="#tab-what">What</a>
       <a class="et-hero-tab" href="#tab-why">Why</a>
@@ -64,564 +117,358 @@
       <span class="et-hero-tab-slider"></span>
     </div>
   </section>
-  <main class="et-main">
-    <!-- WHO -->
-    <section class="et-slide about-section" id="tab-who">
-      <div class="container">
-        <div class="row clearfix">
-          <div class="content-column col-md-6 col-sm-12 col-xs-12">
-            <div class="inner-column">
-              <div class="sec-title">
-                <div class="title">About Us</div>
-                <h2>Building Tomorrow’s Solutions, <br> Today.</h2>
-              </div>
-              <div class="text">At KNDL inc., we are passionate about empowering other small businesses through innovative software solutions. As a
-              boutique firm, we specialize in crafting customized software designed to meet the software needs of each client. Whether
-              you're looking to bring a new idea to life or enhance your existing operations, our team is dedicated to making your
-              vision a reality. We pride ourselves on our collaborative approach, working alongside you every step of the way to
-              ensure that your journey—whether just beginning or already underway—is successful and transformative. Let us help you
-              unlock the full potential of your business with tailored software that grows with you.</div>
-              <a href="contact.html" class="theme-btn btn-style-three">Request Quote</a>
-            </div>
-          </div>
-          <div class="image-column col-md-6 col-sm-12 col-xs-12">
-            <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
-              <div class="image">
-                <img src="https://i.ibb.co/vQbkKj7/about.jpg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- WHAT -->
-    <section class="et-slide" id="tab-what">
-      <section class="pb-5 pt-5" id="services">
+  <main>
+    <div class="et-main">
+      <!-- WHO -->
+      <section class="et-slide about-section" id="tab-who">
         <div class="container">
-          <div class="row mb-3">
-              <h2>Our Services</h2>
-              <div class="title">Engineering Your Digital Dreams.</div>
-          </div>
-          <div class="row">
-            <div class="col-lg-3 col-sm-6">
-              <div class="services-small-item active">
-                <div class="icon">
-                  <i class="bx bx-globe"></i>
+          <div class="row clearfix">
+            <div class="content-column col-lg-6">
+              <div class="p-4  p-lg-0">
+                <div class="sec-title">
+                  <div class="title">About Us</div>
+                  <h2>Building Tomorrow’s Solutions, <br> Today.</h2>
                 </div>
-                <h5 class="services-title">Website</h5>
-                <p>We offer a full range of website services tailored for modern businesses. Our team excels in full stack development
-                using technologies like Angular and .NET, ensuring robust frontend and backend solutions. We also specialize in database
-                management for secure, structured data, and implement cloud solutions to boost your business's flexibility and
-                accessibility. Whether building anew or upgrading existing assets, we provide expert guidance throughout your digital
-                transformation.</p>
+                <div class="text">At KNDL inc., we are passionate about empowering other small businesses through innovative
+                  software solutions. As a
+                  boutique firm, we specialize in crafting customized software designed to meet the software needs of each
+                  client. Whether
+                  you're looking to bring a new idea to life or enhance your existing operations, our team is dedicated to
+                  making your
+                  vision a reality. We pride ourselves on our collaborative approach, working alongside you every step of
+                  the way to
+                  ensure that your journey—whether just beginning or already underway—is successful and transformative. Let
+                  us help you
+                  unlock the full potential of your business with tailored software that grows with you.</div>
+                <a href="contact.html" class="theme-btn btn-style-three">Request Quote</a>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="services-small-item">
-                <div class="icon">
-                  <i class="bx bx-mobile"></i>
+            <div class="image-column col-lg-6 m-auto d-none d-lg-flex">
+              <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="image">
+                  <img src="./images/collab.png" alt="">
                 </div>
-                <h5 class="services-title">iPhone</h5>
-                <p>Elevate your digital presence with our specialized iPhone app services. We are dedicated to
-                crafting mobile and desktop applications tailored for all Apple devices. Our expert team combines innovative design with
-                cutting-edge technology to deliver seamless, user-friendly applications that enhance engagement and drive performance.
-                Whether you're starting from scratch or looking to improve an existing app, we are here to help you succeed in the Apple
-                ecosystem.</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="services-small-item">
-                <div class="icon">
-                  <i class="bx bx-desktop"></i>
-                </div>
-                <h5 class="services-title">Wordpress</h5>
-                <p>We deliver top-tier WordPress solutions designed to enhance your digital presence. Our expertise
-                includes crafting effective and visually appealing WordPress templates that cater to a wide range of needs. Whether
-                you're a small business, a blogger, or anyone looking to establish a robust online identity, our team is adept at
-                creating WordPress sites that are not only attractive but also highly functional. Trust us to empower your web presence
-                with a platform that is favored by millions for its versatility and ease of use. Let's transform your online vision into
-                reality with WordPress. </p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="services-small-item">
-                <div class="icon">
-                  <i class="bx bx-user-voice"></i>
-                </div>
-                <h5 class="services-title">Consulting</h5>
-                <p>We understand that sometimes all you need is the right guidance to pave the way forward. Our hands-off consulting
-                service is designed to provide you with expert advice and ongoing support as you navigate through your software journey.
-                We’re here to offer insights and strategies that empower you to take the reins, ensuring you have the knowledge and
-                tools necessary to succeed. Whether you’re starting a new venture or seeking to enhance your existing operations, our
-                team is committed to helping you achieve your goals with confidence and clarity. Let us help you unlock your potential
-                while you maintain complete control.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </section>
-    <section class="et-slide" id="tab-why">
-      <div class="container">
+      <!-- WHAT -->
+      <section class="et-slide" id="tab-what"><div class="container pb-5 pt-5">
         <div class="row mb-3">
+          <h2>Our Services</h2>
+          <div class="title">Engineering Your Digital Dreams.</div>
+        </div>
+        <div class="row">
+          <div>
+            <div class="services-small-item">
+              <div class="icon">
+                <i class="bx bx-globe"></i>
+              </div>
+              <h5 class="services-title">Website</h5>
+              <p>We offer a full range of website services tailored for modern businesses. Our team excels in full stack
+                development
+                using technologies like Angular and .NET, ensuring robust frontend and backend solutions. We also
+                specialize in database
+                management for secure, structured data, and implement cloud solutions to boost your business's
+                flexibility and
+                accessibility. Whether building anew or upgrading existing assets, we provide expert guidance throughout
+                your digital
+                transformation.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="services-small-item">
+              <div class="icon">
+                <i class="bx bx-mobile"></i>
+              </div>
+              <h5 class="services-title">iPhone</h5>
+              <p>Elevate your digital presence with our specialized iPhone app services. We are dedicated to
+                crafting mobile and desktop applications tailored for all Apple devices. Our expert team combines
+                innovative design with
+                cutting-edge technology to deliver seamless, user-friendly applications that enhance engagement and
+                drive performance.
+                Whether you're starting from scratch or looking to improve an existing app, we are here to help you
+                succeed in the Apple
+                ecosystem.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="services-small-item">
+              <div class="icon">
+                <i class="bx bx-desktop"></i>
+              </div>
+              <h5 class="services-title">Wordpress</h5>
+              <p>We deliver top-tier WordPress solutions designed to enhance your digital presence. Our expertise
+                includes crafting effective and visually appealing WordPress templates that cater to a wide range of
+                needs. Whether
+                you're a small business, a blogger, or anyone looking to establish a robust online identity, our team is
+                adept at
+                creating WordPress sites that are not only attractive but also highly functional. Let's transform your
+                online vision into
+                reality with WordPress. </p>
+            </div>
+          </div>
+          <div>
+            <div class="services-small-item">
+              <div class="icon">
+                <i class="bx bx-user-voice"></i>
+              </div>
+              <h5 class="services-title">Consulting</h5>
+              <p>We understand that sometimes all you need is the right guidance to pave the way forward. Our hands-off
+                consulting
+                service is designed to provide you with expert advice and ongoing support as you navigate through your
+                software journey.
+                We’re here to offer insights and strategies that empower you to take the reins, ensuring you have the
+                knowledge and
+                tools necessary to succeed. Whether you’re starting a new venture or seeking to enhance your existing
+                operations, our
+                team is committed to helping you achieve your goals with confidence and clarity. Let us help you unlock
+                your potential
+                while you maintain complete control.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <!-- WHY -->
+      <section class="et-slide" id="tab-why">
+        <div class="container">
+          <div class="row mb-3">
             <h2>Why Us?</h2>
             <div class="title">Building Tomorrow’s Solutions, Today.</div>
-        </div>
-        <div class="row vertical_content_manage">
-          <div class="col-lg-6">
-            <div class="img_about">
-              <img src="https://i.ibb.co/qpz1hvM/About-us.jpg" alt="" class="img-fluid mx-auto d-block">
-            </div>
           </div>
-          <div class="col-lg-6">
-            <div class="about_header_main">
-              <p class="text-center text-lg-start">our mission is rooted in a commitment to <strong>empower small businesses</strong> through bespoke software solutions. We recognize the
-              unique challenges faced by smaller enterprises, often overlooked by larger corporations, and we are dedicated to filling
-              this gap. Our approach is centered on collaborative development, where we work closely with each client as a team to
-              understand their specific needs and objectives. </p>
-              <p class="text-center text-lg-start mt-3">By doing this, we craft tailored software that not only meets but
-              exceeds expectations, fostering growth and enabling these businesses to compete in today's digital landscape. We <strong>believe
-              in making a difference</strong> by supporting the underdog—providing the tools and guidance necessary for success. As we continue
-              on this journey, our focus remains steadfast: to champion the needs of small businesses and ensure that no company is
-              left behind because of their size.</p>
-              <p class="text-center text-lg-start mt-3">It’s not just about software development; it’s about <strong>building a community</strong> where every
-              member has the support they need to thrive. This commitment drives every project we undertake and fuels our passion to
-              serve and elevate those who might otherwise be ignored by big business.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-lg-4">
-            <div class="about_content_box_all mt-3">
-              <div class="about_detail text-center">
-                <div class="about_icon">
-                  <i class="bx bx-building"></i>
-                </div>
-                <h5 class="text-dark text-capitalize mt-3 font-weight-bold">Build</h5>
-                <p class="edu_desc mt-3 mb-0 text-muted">We offer several services. </p>
+          <div class="row vertical_content_manage">
+            <div class="col-lg-auto pb-5 pb-lg-0 m-auto">
+              <div class="img_about">
+                <img src="./images/help.png" alt="" class="img-fluid mx-auto d-block">
               </div>
             </div>
-          </div>
-    
-          <div class="col-lg-4">
-            <div class="about_content_box_all mt-3">
-              <div class="about_detail text-center">
-                <div class="about_icon">
-                  <i class="bx bx-smile"></i>
-                </div>
-                <h5 class="text-dark text-capitalize mt-3 font-weight-bold">Beautiful</h5>
-                <p class="edu_desc mb-0 mt-3 text-muted">We create stunning products.</p>
-              </div>
-            </div>
-          </div>
-    
-          <div class="col-lg-4">
-            <div class="about_content_box_all mt-3">
-              <div class="about_detail text-center">
-                <div class="about_icon">
-                  <i class="bx bx-globe"></i>
-                </div>
-                <h5 class="text-dark text-capitalize mt-3 font-weight-bold">Platforms</h5>
-                <p class="edu_desc mb-0 mt-3 text-muted">We build full platforms.</p>
+            <div class="col-lg p-4 p-lg-0 ps-lg-5 ps-0">
+              <div class="about_header_main">
+                <p class="text-center text-lg-start">our mission is rooted in a commitment to <strong>empower small
+                    businesses</strong> through bespoke software solutions. We recognize the
+                  unique challenges faced by smaller enterprises, often overlooked by larger corporations, and we are
+                  dedicated to filling
+                  this gap. Our approach is centered on collaborative development, where we work closely with each client as
+                  a team to
+                  understand their specific needs and objectives. </p>
+                <p class="text-center text-lg-start mt-3">By doing this, we craft tailored software that not only meets but
+                  exceeds expectations, fostering growth and enabling these businesses to compete in today's digital
+                  landscape. We <strong>believe
+                    in making a difference</strong> by supporting the underdog—providing the tools and guidance necessary
+                  for success. As we continue
+                  on this journey, our focus remains steadfast: to champion the needs of small businesses and ensure that no
+                  company is
+                  left behind because of their size.</p>
+                <p class="text-center text-lg-start mt-3">It’s not just about software development; it’s about
+                  <strong>building a community</strong> where every
+                  member has the support they need to thrive. This commitment drives every project we undertake and fuels
+                  our passion to
+                  serve and elevate those who might otherwise be ignored by big business.</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="et-slide when" id="tab-when">
-      <div class="container">
-        <div class="footer-top">
-          <div class="row">
-            <div class="col-md-6 col-lg-3 about-footer">
-              <h3>Lorem Ipsum dummy text </h3>
-              <ul>
-                <li><a href="tel:(010) 1234 4321"><i class="fas fa-phone fa-flip-horizontal"></i>(010) 1234 4321</a></li>
-                <li><i class="fas fa-map-marker-alt"></i>
-                  1 / 105 Bay Lights,
-                  <br />Lorem Ipsum,
-                  <br />LIC 3201
-                </li>
-              </ul>
-              <a href="" class="btn red-btn">Book Now</a>
-            </div>
-            <div class="col-md-6 col-lg-2 page-more-info">
-              <div class="footer-title">
-                <h4>Page links</h4>
-              </div>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Testimonial</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-      
-            <div class="col-md-6 col-lg-3 page-more-info">
-              <div class="footer-title">
-                <h4>More Info</h4>
-              </div>
-              <ul>
-                <li><a href="#">Lorem ipsum</a></li>
-                <li><a href="#">Dolor sit amet</a></li>
-                <li><a href="#">Consectetur Adipisicing </a></li>
-                <li><a href="#">Ed do eiusmod tempor incididunt</a></li>
-              </ul>
-            </div>
-            <div class="col-md-6 col-lg-4 open-hours">
-              <div class="footer-title">
-                <h4>Open hours</h4>
-                <ul class="footer-social">
-                  <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-      
-                </ul>
-              </div>
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td><i class="far fa-clock"></i>Monday Thursday</td>
-                    <td>9:00am - 5:00pm</td>
-                  </tr>
-                  <tr>
-                    <td><i class="far fa-clock"></i>Friday</td>
-                    <td>9:00am - 4:00pm</td>
-                  </tr>
-                  <tr>
-                    <td><i class="far fa-clock"></i>Sturday</td>
-                    <td>9:00am - 1:30pm</td>
-                  </tr>
-                  <tr>
-                    <td><i class="far fa-clock"></i>Sunday</td>
-                    <td>9:30am - 12:00pm</td>
-                  </tr>
-                </tbody>
-              </table>
-              <hr>
-              <div class="footer-logo">
-      
-                <table>
-                  <tbody>
-                    <tr>
-                      <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"></td>
-                      <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"></td>
-                      <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"></td>
-                      <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"></td>
-                      <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"></td>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="footer-bottom">
-          <div class="row">
-            <div class="col-sm-4">
-              <a href="">Privacy policy</a>
-            </div>
-            <div class="col-sm-8">
-              <p>Lorem ipsum dolor sit amet @ 2019 All rights reserved</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="et-slide" id="tab-how">
-      <div id="generic_price_table" class="w-100 p-5">
-        <div class="row">
-          <div class="col-md-4">
-        
-            <!--PRICE CONTENT START-->
-            <div class="generic_content clearfix">
-        
-              <!--HEAD PRICE DETAIL START-->
-              <div class="generic_head_price clearfix">
-        
-                <!--HEAD CONTENT START-->
-                <div class="generic_head_content clearfix">
-        
-                  <!--HEAD START-->
-                  <div class="head_bg"></div>
-                  <div class="head">
-                    <span>Basic</span>
-                  </div>
-                  <!--//HEAD END-->
-        
-                </div>
-                <!--//HEAD CONTENT END-->
-        
-                <!--PRICE START-->
-                <div class="generic_price_tag clearfix">
-                  <span class="price">
-                    <span class="sign">$</span>
-                    <span class="currency">99</span>
-                    <span class="cent">.99</span>
-                    <span class="month">/MON</span>
-                  </span>
-                </div>
-                <!--//PRICE END-->
-        
-              </div>
-              <!--//HEAD PRICE DETAIL END-->
-        
-              <!--FEATURE LIST START-->
-              <div class="generic_feature_list">
-                <ul>
-                  <li><span>2GB</span> Bandwidth</li>
-                  <li><span>150GB</span> Storage</li>
-                  <li><span>12</span> Accounts</li>
-                  <li><span>7</span> Host Domain</li>
-                  <li><span>24/7</span> Support</li>
-                </ul>
-              </div>
-              <!--//FEATURE LIST END-->
-        
-              <!--BUTTON START-->
-              <div class="generic_price_btn clearfix">
-                <a class="" href="">Sign up</a>
-              </div>
-              <!--//BUTTON END-->
-        
-            </div>
-            <!--//PRICE CONTENT END-->
-        
-          </div>
-        
-          <div class="col-md-4">
-        
-            <!--PRICE CONTENT START-->
-            <div class="generic_content active clearfix">
-        
-              <!--HEAD PRICE DETAIL START-->
-              <div class="generic_head_price clearfix">
-        
-                <!--HEAD CONTENT START-->
-                <div class="generic_head_content clearfix">
-        
-                  <!--HEAD START-->
-                  <div class="head_bg"></div>
-                  <div class="head">
-                    <span>Standard</span>
-                  </div>
-                  <!--//HEAD END-->
-        
-                </div>
-                <!--//HEAD CONTENT END-->
-        
-                <!--PRICE START-->
-                <div class="generic_price_tag clearfix">
-                  <span class="price">
-                    <span class="sign">$</span>
-                    <span class="currency">199</span>
-                    <span class="cent">.99</span>
-                    <span class="month">/MON</span>
-                  </span>
-                </div>
-                <!--//PRICE END-->
-        
-              </div>
-              <!--//HEAD PRICE DETAIL END-->
-        
-              <!--FEATURE LIST START-->
-              <div class="generic_feature_list">
-                <ul>
-                  <li><span>2GB</span> Bandwidth</li>
-                  <li><span>150GB</span> Storage</li>
-                  <li><span>12</span> Accounts</li>
-                  <li><span>7</span> Host Domain</li>
-                  <li><span>24/7</span> Support</li>
-                </ul>
-              </div>
-              <!--//FEATURE LIST END-->
-        
-              <!--BUTTON START-->
-              <div class="generic_price_btn clearfix">
-                <a class="" href="">Sign up</a>
-              </div>
-              <!--//BUTTON END-->
-        
-            </div>
-            <!--//PRICE CONTENT END-->
-        
-          </div>
-          <div class="col-md-4">
-        
-            <!--PRICE CONTENT START-->
-            <div class="generic_content clearfix">
-        
-              <!--HEAD PRICE DETAIL START-->
-              <div class="generic_head_price clearfix">
-        
-                <!--HEAD CONTENT START-->
-                <div class="generic_head_content clearfix">
-        
-                  <!--HEAD START-->
-                  <div class="head_bg"></div>
-                  <div class="head">
-                    <span>Unlimited</span>
-                  </div>
-                  <!--//HEAD END-->
-        
-                </div>
-                <!--//HEAD CONTENT END-->
-        
-                <!--PRICE START-->
-                <div class="generic_price_tag clearfix">
-                  <span class="price">
-                    <span class="sign">$</span>
-                    <span class="currency">299</span>
-                    <span class="cent">.99</span>
-                    <span class="month">/MON</span>
-                  </span>
-                </div>
-                <!--//PRICE END-->
-        
-              </div>
-              <!--//HEAD PRICE DETAIL END-->
-        
-              <!--FEATURE LIST START-->
-              <div class="generic_feature_list">
-                <ul>
-                  <li><span>2GB</span> Bandwidth</li>
-                  <li><span>150GB</span> Storage</li>
-                  <li><span>12</span> Accounts</li>
-                  <li><span>7</span> Host Domain</li>
-                  <li><span>24/7</span> Support</li>
-                </ul>
-              </div>
-              <!--//FEATURE LIST END-->
-        
-              <!--BUTTON START-->
-              <div class="generic_price_btn clearfix">
-                <a class="" href="">Sign up</a>
-              </div>
-              <!--//BUTTON END-->
-        
-            </div>
-            <!--//PRICE CONTENT END-->
-        
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Site footer -->
-    <footer class="footer-section">
-      <div class="container">
-        <div class="footer-cta pt-5 pb-5">
-          <div class="row">
-            <div class="col-xl-4 col-md-4 mb-30">
-              <div class="single-cta">
-                <i class="fas fa-map-marker-alt"></i>
-                <div class="cta-text">
-                  <h4>Find us</h4>
-                  <span>1010 Avenue, sw 54321, chandigarh</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-4 mb-30">
-              <div class="single-cta">
-                <i class="fas fa-phone"></i>
-                <div class="cta-text">
-                  <h4>Call us</h4>
-                  <span>9876543210 0</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-4 mb-30">
-              <div class="single-cta">
-                <i class="far fa-envelope-open"></i>
-                <div class="cta-text">
-                  <h4>Mail us</h4>
-                  <span>mail@info.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-content pt-5 pb-5">
-          <div class="row">
-            <div class="col-xl-4 col-lg-4 mb-50">
-              <div class="footer-widget">
-                <div class="footer-logo">
-                  <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
-                </div>
-                <div class="footer-text">
-                  <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec
-                    tetur adipisicing
-                    elit,Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="footer-social-icon">
-                  <span>Follow us</span>
-                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-              <div class="footer-widget">
-                <div class="footer-widget-heading">
-                  <h3>Useful Links</h3>
-                </div>
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">about</a></li>
-                  <li><a href="#">services</a></li>
-                  <li><a href="#">portfolio</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Our Services</a></li>
-                  <li><a href="#">Expert Team</a></li>
-                  <li><a href="#">Contact us</a></li>
-                  <li><a href="#">Latest News</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-              <div class="footer-widget">
-                <div class="footer-widget-heading">
-                  <h3>Subscribe</h3>
-                </div>
-                <div class="footer-text mb-25">
-                  <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                </div>
-                <div class="subscribe-form">
-                  <form action="#">
-                    <input type="text" placeholder="Email Address">
-                    <button><i class="fab fa-telegram-plane"></i></button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="copyright-area">
+      </section>
+      <!-- WHEN -->
+      <section class="et-slide" id="tab-when">
         <div class="container">
+          <div class="row mb-3">
+            <h2>Collaborate</h2>
+            <div class="title">Innovate, Integrate, Inspire.</div>
+          </div>
           <div class="row">
-            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-              <div class="copyright-text">
-                <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+            <!--START SINGLE SERVICE AREA-->
+            <div class="col-md-6 col-lg-4 col-sm-12">
+              <div class="single_service hvr-curl-top-right">
+                <div class="single_service-left mb-4">
+                  <div class="icon text-center mx-auto">
+                    <i class="bx bx-phone"></i>
+                  </div>
+                </div>
+                <div class="single_service-body text-start">
+                  <h4 class="single_service-heading text-center">Discuss</h4>
+                  <p class="m-0 text-center">In our initial meeting, we'll engage in a thorough discussion to understand your specific requirements and expectations.
+                  This session is crucial for setting the foundation of our project, ensuring we align our strategies with your vision.</p>
+                </div>
+              </div>
+            </div><!--/END SINGLE SERVICE AREA-->
+            <!--START SINGLE SERVICE AREA-->
+            <div class="col-md-6 col-lg-4 col-sm-12">
+              <div class="single_service hvr-curl-top-right">
+                <div class="single_service-left mb-4">
+                  <div class="icon text-center mx-auto">
+                    <i class="bx bx-edit"></i>
+                  </div>
+                </div>
+                <div class="single_service-body text-start">
+                  <h4 class="single_service-heading text-center">Design</h4>
+                  <p class="m-0 text-center">ogether, we'll transform ideas into tangible design concepts. This collaborative phase allows us to combine our
+                  expertise with your unique insights, ensuring the designs not only meet but exceed your expectations.</p>
+                </div>
+              </div>
+            </div><!--/END SINGLE SERVICE AREA-->
+            <!--START SINGLE SERVICE AREA-->
+            <div class="col-md-6 col-lg-4 col-sm-12">
+              <div class="single_service hvr-curl-top-right">
+                <div class="single_service-left mb-4">
+                  <div class="icon text-center mx-auto">
+                    <i class="bx bx-happy-heart-eyes"></i>
+                  </div>
+                </div>
+                <div class="single_service-body text-start">
+                  <h4 class="single_service-heading text-center">Develop</h4>
+                  <p class="m-0 text-center">With a solid plan and agreed-upon concepts in place, we will commence the creation process. This stage brings our
+                  collaborative designs to life, meticulously crafting your project with precision and creativity.</p>
+                </div>
+              </div>
+            </div><!--/END SINGLE SERVICE AREA-->
+            <!--START SINGLE SERVICE AREA-->
+          </div>
+        </div>
+      </section>
+      <!-- HOW -->
+      <section class="et-slide" id="tab-how">
+        <div class="container">
+          <div class="row mb-3">
+            <h2>Offers</h2>
+            <div class="title">Software Craftsmanship at Its Finest.</div>
+          </div>
+          <div id="generic_price_table" class="w-100 p-5">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="generic_content clearfix">
+                  <div class="generic_head_price clearfix">
+                    <div class="generic_head_content clearfix">
+                      <div class="head_bg"></div>
+                      <div class="head">
+                        <span>Basic</span>
+                      </div>
+                    </div>
+                    <div class="generic_price_tag clearfix">
+                      <span class="price">
+                        <span class="sign">$</span>
+                        <span class="currency">67</span>
+                        <span class="cent">.00</span>
+                        <span class="month">/HR</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="generic_feature_list">
+                    <ul>
+                      <li><span>1</span> Technologies</li>
+                      <li><span>5</span> Hours</li>
+                      <li><span>24/7</span> Support</li>
+                    </ul>
+                  </div>
+                  <!--<div class="generic_price_btn clearfix">
+                    <a class="" href="">Sign up</a>
+                  </div>-->
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="generic_content active clearfix">
+                  <div class="generic_head_price clearfix">
+                    <div class="generic_head_content clearfix">
+                      <div class="head_bg"></div>
+                      <div class="head">
+                        <span>Standard</span>
+                      </div>
+                    </div>
+                    <div class="generic_price_tag clearfix">
+                      <span class="price">
+                        <span class="sign">$</span>
+                        <span class="currency">99</span>
+                        <span class="cent">.00</span>
+                        <span class="month">/HR</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="generic_feature_list">
+                    <ul>
+                      <li><span>3</span> Technologies</li>
+                      <li><span>10</span> Hours</li>
+                      <li><span>24/7</span> Support</li>
+                    </ul>
+                  </div>
+                  <!--<div class="generic_price_btn clearfix">
+                    <a class="" href="">Sign up</a>
+                  </div>-->
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="generic_content clearfix">
+                  <div class="generic_head_price clearfix">
+                    <div class="generic_head_content clearfix">
+                      <div class="head_bg"></div>
+                      <div class="head">
+                        <span>Unlimited</span>
+                      </div>
+                    </div>
+                    <div class="generic_price_tag clearfix">
+                      <span class="price">
+                        <span class="sign">$</span>
+                        <span class="currency">120</span>
+                        <span class="cent">.00</span>
+                        <span class="month">/HR</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="generic_feature_list">
+                    <ul>
+                      <li><span>Multiple</span> Technologies</li>
+                      <li><span>20</span> Hours</li>
+                      <li><span>24/7</span> Support</li>
+                    </ul>
+                  </div>
+                  <!--<div class="generic_price_btn clearfix">
+                    <a class="" href="">Sign up</a>
+                  </div>-->
+                </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-              <div class="footer-menu">
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Terms</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Policy</a></li>
-                  <li><a href="#">Contact</a></li>
+          </div>
+        </div>
+      </section>
+      <!-- Site footer -->
+      <footer class="footer-section">
+        <div class="container p-5">
+          <div class="footer-text">
+            <p>We are always eager to collaborate and create exceptional digital platforms. Our team is open to new projects and
+              partnerships, bringing a wealth of experience and creativity to the table. We are committed to building innovative
+              solutions that not only meet but exceed your expectations. Whether you're looking to launch a startup or expand an
+              existing enterprise, we are here to help you realize your vision and create amazing platforms that truly make a
+              difference. Let's work together to turn your ideas into reality!</p>
+          </div>
+          <div class="footer-logo">
+            <div class="logo">
+              <h3>KNDL</h3>
+              <p>-INC-</p>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-area">
+          <div class="container">
+            <div class="d-flex justify-content-between">
+              <div class="copyright-text d-flex">
+                <p class="my-auto">Copyright &copy; 2024, All Right Reserved <a href="https://codepen.io/anupkumar92/">KNDL inc.</a></p>
+              </div>
+              <div class="footer-menu d-flex">
+                <ul class="my-auto">
+                  <li><a href="#tab-home">Home</a></li>
+                  <li><a href="#tab-who">Who</a></li>
+                  <li><a href="#tab-what">What</a></li>
+                  <li><a href="#tab-why">Why</a></li>
+                  <li><a href="#tab-when">When</a></li>
+                  <li><a href="#tab-how">How</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </main>
   <script src='https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
