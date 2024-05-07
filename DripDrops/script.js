@@ -1,5 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
-
+/*
 // Banner Big Image
 gsap.to("#bannerBigimg", {
   duration: 2,
@@ -9,7 +9,7 @@ gsap.to("#bannerBigimg", {
   yoyo: true,
   repeat: 1,
   repeatRefresh: true
-});
+});*/
 
 // Banner Big Text
 gsap.to("#headingBig", {
