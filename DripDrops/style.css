@@ -25,6 +25,8 @@ p {
 }
 html,
 body {
+  scroll-behavior: smooth;
+  transition: 1s ease;
   overflow-x: hidden !important;
   background-image: url(image/background.png);
   background-size: cover;
@@ -77,7 +79,7 @@ p {
   font-size: 18px;
   line-height: 28px;
   color: white;
-  filter: drop-shadow(0px 0px 2px black);
+  filter: drop-shadow(0px 0px 2px white);
 }
 .top{
   top:0;
@@ -586,6 +588,7 @@ ul {
   font-size: 14px;
   color: white;
   line-height: 28px;
+  filter: none;
 }
 
 .footer-widget-heading h3 {
@@ -611,6 +614,7 @@ ul {
   float: left;
   width: 50%;
   margin-bottom: 12px;
+  cursor: pointer;
 }
 
 .footer-widget ul li a:hover {
@@ -620,6 +624,7 @@ ul {
 .footer-widget ul li a {
   color: white;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 .copyright-area {
@@ -631,6 +636,7 @@ ul {
   margin: 0;
   font-size: 14px;
   color: var(--secondary);
+  filter: none;
 }
 
 .copyright-text p a {
@@ -640,6 +646,7 @@ ul {
 .footer-menu li {
   display: inline-block;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .footer-menu li:hover a {
